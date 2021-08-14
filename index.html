@@ -7,7 +7,16 @@
         body {
             padding: 0;
             margin: 0;
-            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #570f0f
         }
 
         header {
@@ -16,9 +25,15 @@
         }
 
         footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            margin-top: 10px;
             background-color: #895252;
             text-align: center;
             padding: 30px 0;
+            color: white;
         }
 
         .logo {
@@ -38,10 +53,20 @@
         .departments__list {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 20px;
         }
 
         .departments__item {
-            height: 300px;
+            height: 200px;
+            background-color: #ffe4e4;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .departments__item:hover {
+            box-shadow: 5px 5px 5px #9c6161;
         }
     </style>
 </head>
@@ -63,16 +88,16 @@
 
             <div class="departments__list">
                 <div class="departments__item">
-                    <h3>Tsokdra</h3>
+                    <h2>Tsokdra</h2>
                 </div>
                 <div class="departments__item">
-                    <h3>Shedra</h3>
+                    <h2>Shedra</h2>
                 </div>
                 <div class="departments__item">
-                    <h3>Retreat Center</h3>
+                    <h2>Retreat Center</h2>
                 </div>
                 <div class="departments__item">
-                    <h3>Men-Tse</h3>
+                    <h2>Men-Tse</h2>
                 </div>
             </div>
 
